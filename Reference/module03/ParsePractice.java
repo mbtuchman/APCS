@@ -1,4 +1,4 @@
-package module03;
+package Reference.module03;
 
 /**
  * This program demonstrates how to accept user input as a String

@@ -1,4 +1,4 @@
-package module05;
+package Reference.module05;
 
 /**
  * The purpose of this program is to illustrate the use of the for loop

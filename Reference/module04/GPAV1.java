@@ -1,4 +1,4 @@
-package module04;
+package Reference.module04;
 
 /**
  * This program illustrates the use of a boolean expression

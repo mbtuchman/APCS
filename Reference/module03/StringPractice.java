@@ -1,4 +1,4 @@
-package module03;
+package Reference.module03;
 
 /**
  * The purpose of this program is to demonstrate the use of several 

@@ -1,4 +1,4 @@
-package module04;
+package Reference.module04;
 
 /**
  * The following program calculates a person's salary based on

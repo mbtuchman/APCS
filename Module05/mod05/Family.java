@@ -1,4 +1,4 @@
-package mod05;
+package Module05.mod05;
 
 import java.io.File;
 import java.io.IOException;
