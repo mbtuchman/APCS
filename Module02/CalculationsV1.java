@@ -1,4 +1,4 @@
-package mod02;
+package Module02.mod02;
 
 /**
  * The Calculations class performs addition, subtraction,
