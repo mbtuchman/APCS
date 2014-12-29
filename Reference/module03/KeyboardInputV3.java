@@ -1,4 +1,4 @@
-package mod03;
+package module03;
 
 /**
  * The purpose of this program is to illustrate the use of keyboard
@@ -10,10 +10,10 @@ package mod03;
  */
 
 import java.util.Scanner;
-public class KeyboardInputV2
+public class KeyboardInputV3
 {
     public static void main(String [ ] args)
-    {
+    {  
         //construct a Scanner object with one line
         @SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);       
@@ -28,6 +28,12 @@ public class KeyboardInputV2
         System.out.print("Please enter a decimal value:  ");
         double decimalValue = in.nextDouble();
         System.out.println("You entered: " + decimalValue);
+        System.out.println();
+        
+        //use the next() method to enter a word
+        System.out.print("Please enter a single word:  ");
+	    String word = in.next();
+	    System.out.println("You entered: " + word);
         System.out.println();
     }
 }

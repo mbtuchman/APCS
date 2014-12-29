@@ -1,4 +1,4 @@
-package mod03;
+package module03;
 
 /**
  * The purpose of this program is to illustrate the use of keyboard
@@ -10,7 +10,7 @@ package mod03;
  */
 
 import java.util.Scanner;
-public class KeyboardInputV3
+public class KeyboardInputV4
 {
     public static void main(String [ ] args)
     {  
@@ -35,5 +35,13 @@ public class KeyboardInputV3
 	    String word = in.next();
 	    System.out.println("You entered: " + word);
         System.out.println();
+        
+        //uee the next() method to enter three words on a single line
+        System.out.print("Enter three words separated by spaces: ");
+        String word1 = in.next();
+        String word2 = in.next();
+        String word3 = in.next();
+        System.out.println("Printing in reverse order");
+        System.out.println(word3 + " " + word2 + " " + word1);
     }
 }

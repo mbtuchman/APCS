@@ -1,4 +1,4 @@
-package mod02;
+package module02;
 
 
 /**

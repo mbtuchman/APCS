@@ -1,4 +1,4 @@
-package mod03;
+package module03;
 
 /**
  * The purpose of this program is to illustrate the use of keyboard

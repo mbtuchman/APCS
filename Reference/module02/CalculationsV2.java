@@ -1,4 +1,4 @@
-package mod02;
+package module02;
 
 
 /**
@@ -7,42 +7,42 @@ package mod02;
  * decimals.
  * 
  * ©FLVS 2007
- * @author Bill Jordan; A.Ross
+ * @author Bill Jordan; A.Ross; Omar Rahman
  * @version 01/19/07; 06/24/12
  */
-public class CalculationsV1
+public class CalculationsV2
 {
     public static void main(String[ ] args)
     {
         // Addition
         System.out.println("Addition");
-        System.out.println( 25 + 9 );
-        System.out.println( 43.21 + 3.14 + 5.0 );
-        //System.out.println();
+        System.out.println("25 plus 9 equals " + (25 + 9 ));
+        System.out.println("43.21 plus 3.14 + 5.0 equals " + (43.21 + 3.14 + 5.0 ));
+        System.out.println();
         
         // Subtraction
         System.out.println("Subtraction");
-        System.out.println( 16 - 9 - 25 );
-        System.out.println( 3.14 - 5.0 );
-        //System.out.println();
+        System.out.println("16 minus 9 minus 25 equals " + (16 - 9 - 25 ));
+        System.out.println("3.14 minus 5.0 equals "  + (3.14 - 5.0 ));
+        System.out.println();
         
         // Multiplication
         System.out.println("Multiplication");
-        System.out.println( 25 * 9 ); 
-        System.out.println(3.14 * 5.0 * 5.0 );
-        //System.out.println();
+        System.out.println("25 times 9 equals " + (25 * 9 )); 
+        System.out.println("3.14 times 5.0 times 5.0 equals " + (3.14 * 5.0 * 5.0 ));
+        System.out.println();
         
         // Division
         System.out.println("Division");
-        System.out.println( 9 / 25 );
-        System.out.println( 43.21 / 5.0 );
-        //System.out.println();
+        System.out.println("9 divided by 25 equals " + (9 / 25 ));
+        System.out.println("43.21 divided by 5.0 equals " + (43.21 / 5.0 ));
+        System.out.println();
          
         // Modulus operator
         System.out.println("Modulus");
-        System.out.println( 16 % 9 );
-        System.out.println( 5.0 % 3.14 );
-        //System.out.println();
+        System.out.println("16 % 9 equals " + (16 % 9 ));
+        System.out.println("5.0 % 3.14 equals " + (5.0 % 3.14 ));
+        System.out.println();
         
         // 2.02 Lab Equations
         // 15 divided by 2.5 times -2 plus 10 / 5

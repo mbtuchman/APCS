@@ -1,4 +1,4 @@
-package mod04;
+package module04;
 
 /**
  * This program calculates the admission fee based on a person's age.

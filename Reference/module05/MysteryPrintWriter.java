@@ -1,4 +1,4 @@
-package mod05;
+package module05;
 
 import java.io.IOException;
 import java.io.PrintWriter;

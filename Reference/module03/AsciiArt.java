@@ -1,4 +1,4 @@
-package mod03;
+package module03;
 
 public class AsciiArt {
 	
