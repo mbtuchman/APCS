@@ -1,5 +1,6 @@
 package mod02;
 
+
 /**
  * Project title: 02.04 Primitive Data Types
  * 

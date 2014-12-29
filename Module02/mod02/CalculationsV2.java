@@ -1,5 +1,6 @@
 package mod02;
 
+
 /**
  * The Calculations class performs addition, subtraction,
  * multiplication, division, and modulus operations on integers and
@@ -9,21 +10,13 @@ package mod02;
  * @author Bill Jordan; A.Ross; Omar Rahman
  * @version 01/19/07; 06/24/12
  */
-public class CalculationsV3
+public class CalculationsV2
 {
-	static int iNum25 = 25;
-	static int iNum9 = 9;
-	int iNum43 = (int) 43.21;
-	int iNum3 = (int) 3.14;
-	int iNum5 = (int) 5.0;
-	int iNum16 = 16;
-	
     public static void main(String[ ] args)
     {
         // Addition
         System.out.println("Addition");
-        System.out.print(iNum25 + " plus " + iNum9 + " equals ");
-        System.out.println(iNum25 + iNum9);
+        System.out.println("25 plus 9 equals " + (25 + 9 ));
         System.out.println("43.21 plus 3.14 + 5.0 equals " + (43.21 + 3.14 + 5.0 ));
         System.out.println();
         
