@@ -29,7 +29,7 @@ public class GuessingGameV2 {
 		Scanner in = new Scanner(System.in);
 		
 		Random random = new Random();
-		int randomNumber = random.nextInt(100);
+		int randomNumber = random.nextInt(100) + 1;
 		int tries = 0;
 		int guess;
 		boolean win = false;
