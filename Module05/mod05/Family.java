@@ -29,7 +29,7 @@ public class Family {
 		double countGG = 0;
 		double countBG = 0;
 		double countBB = 0;
-		File fileName = new File("test1.txt");
+		File fileName = new File("MaleFemaleInFamily.txt");
 		Scanner inFile = new Scanner(fileName);
 		while (inFile.hasNextLine()) {
 			String token = inFile.next();
@@ -46,7 +46,6 @@ public class Family {
 		inFile.close();
 		
 		// 75000 is the total amount of lines in the file
-		// Would it be possible to make a method for this to be found instantly?
 		double bbPercent = countBB / 75000 * 100;
 		double ggPercent = countGG / 75000 * 100;
 		double bgPercent = countBG / 75000 * 100;
