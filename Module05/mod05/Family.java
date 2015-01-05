@@ -26,33 +26,52 @@ public class Family {
 	
 	public static void main(String[] args) throws IOException {
 		
-		double countGG = 0;
-		double countBG = 0;
-		double countBB = 0;
-		File fileName = new File("MaleFemaleInFamily.txt");
+		int countGG = 0;
+		int countBG = 0;
+		int countBB = 0;
+		int countGB = 0;
+		int count = 0;
+		
+		File fileName = new File("Files/MaleFemaleInFamily.txt");
 		Scanner inFile = new Scanner(fileName);
 		while (inFile.hasNextLine()) {
 			String token = inFile.next();
-			if (token.equalsIgnoreCase("BB")) {
+			if (token.equals("BB")) {
 				countBB++;
+				count++;
 			}
-			else if (token.equalsIgnoreCase("GG")) {
+			else if (token.equals("GG")) {
 				countGG++;
+				count++;
 			}
-			else if (token.equalsIgnoreCase("BG")) {
+			else if (token.equals("BG")) {
 				countBG++;
+				count++;
+			}
+			else if (token.equals("GB")) {
+				countGB++;
+				count++;
 			}
 		}
+		
+		int size = count;
+		
+		System.out.println("Sample size: " + size);
+		System.out.println("Families with two boys: " + countBB);
+		System.out.println("Families with two girls: " + countGG);
+		System.out.println("Families with one boy, one girl: " + countBG);
+		System.out.println("Families with one girl, one boy: " + countGB);
+		System.out.print("\n");
+		
 		inFile.close();
-		
-		// 75000 is the total amount of lines in the file
-		double bbPercent = countBB / 75000 * 100;
-		double ggPercent = countGG / 75000 * 100;
-		double bgPercent = countBG / 75000 * 100;
-		
-		System.out.println("Sample Size:");
-		System.out.println("Two Boys: " + bbPercent + "%");
-		System.out.println("Two Girls: " + ggPercent + "%");
-		System.out.println("One boy, one girl: " + bgPercent + "%");
+		double bbPercent = countBB / (double)size * 100;
+		double ggPercent = countGG / (double)size * 100;
+		double bgPercent = countBG / (double)size * 100;
+		double gbPercent = countGB / (double)size * 100;
+
+		System.out.println("Probability of Two Boys: " + bbPercent + "%");
+		System.out.println("Probability of Two Girls: " + ggPercent + "%");
+		System.out.println("Probability of One boy, one girl: " + bgPercent + "%");
+		System.out.print("Probability of One girl, one boy: " + gbPercent + "%");
 	}
 }
