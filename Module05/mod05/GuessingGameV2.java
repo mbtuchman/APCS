@@ -30,6 +30,7 @@ public class GuessingGameV2 {
 		Scanner in = new Scanner(System.in);
 		
 		//Declare the variables
+		@SuppressWarnings("unused")
 		Random random = new Random();
 		int tries = 0;
 		int guess;
