@@ -25,16 +25,27 @@ public class GuessingGameV2 {
 	
 	public static void main(String[] args) {
 		
+		//Declare the scanner method
 		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		
+		//Declare the variables
 		Random random = new Random();
-		int randomNumber = random.nextInt(100) + 1;
 		int tries = 0;
 		int guess;
 		boolean win = false;
 		
+		//Ask the user for the range
+		System.out.println("Please input the highest value in your range: ");
+		int highest = in.nextInt();
+		System.out.print("Please input the lowest value in your range: ");
+		int lowest = in.nextInt();
+		//Generate a random number within the inputed range
+		int randomNumber = (int)(Math.random() * (highest - lowest) + lowest);
+		
+		//While the user didn't win yet
 		while (win == false) {
+			//Prompt user for guesss
 			System.out.println("Enter your guess (1 - 100):  ");
 			guess = in.nextInt();
 			tries++;
@@ -49,6 +60,7 @@ public class GuessingGameV2 {
 				System.out.println("Too high, try again!");
 			}
 		}
+		//Output correct number guessed and amount of tries
 		System.out.println("You guessed the number after " + tries + " tries!" +  " It was: " + randomNumber);
 		
 		
