@@ -17,7 +17,7 @@ import java.util.Scanner;
  * (-) Formatting took some time.
  * ***************************
  * 
- * In the future: FIll in the menus on the topic.
+ * In the future: Fill in the menus on the topic.
  */
 
 public class WellnessMenu {
