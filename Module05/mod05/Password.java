@@ -3,6 +3,25 @@ package Module05.mod05;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * Project title: 05.07 Challenge Program
+ * 
+ * Purpose of Project: Generate a random password with uppercase, lowercase, etc. based on user
+ * selection.
+ * 
+ * @version 1/6/2015
+ * 
+ * @author Omar Rahman
+ * 
+ * *********** PMR ***********
+ * (+) Got the hang of for methods more.
+ * 
+ * (-) Getting the loops to work took some trial and error.
+ * ***************************
+ * 
+ * In the future: Practice.
+ */
+
 public class Password {
 	
 	public static void main(String[] args) {
@@ -39,8 +58,10 @@ public class Password {
 		System.out.println("Enter a selection (1-5): ");
 		choice = in.nextInt();
 		System.out.print("\n");
-		System.out.println("Choose a password length (1 - 14)");
-		length = in.nextInt();
+		if (choice < 5) {
+			System.out.println("Choose a password length (1 - 14)");
+			length = in.nextInt();	
+		}
 		
 		// Choice 1
 		if (choice == 1) {
@@ -80,7 +101,7 @@ public class Password {
 					password += uppercase.charAt(randomNumber.nextInt(uppercase.length()));
 				}
 				else if (loopSelection == 2) {
-					password += digits.charAt(randomNumber.nextInt(uppercase.length()));
+					password += digits.charAt(randomNumber.nextInt(digits.length()));
 				}
 			}
 			
@@ -116,7 +137,8 @@ public class Password {
 			System.out.println("Please choose a number between 1 and 5.");
 		}
 		// Print generated password
-		System.out.println("Password: " + password);
+		if (choice < 5) {
+			System.out.println("Password: " + password);
+		}
 	}
-
 }
