@@ -15,10 +15,28 @@ class AnnualClimatev1 {
         String city = "Miami";
         String state = "Florida";
         
+        //Declare the Arrays
+        String months [] = {"January",
+        "February", "March",
+        "April", "May",
+        "June", "July",
+        "August", "September",
+        "November", "December"};
         
+        
+        //User input
+        System.out.println("Choose the temperature scale (F = Fahrenheit, C = Celsius): ");
+        String choiceTemp = in.choice;
+        System.out.print("Choose the precipitation scale (i = inches, c = centimeteres): ");
+        String choiceLength = in.choiceLength;
+        
+        
+        //User output
         System.out.println("Climate Data");
         System.out.println("Location: " + city + ", " + state);
         System.out.println("Month\t" + "Temperature (F)\t" + "Precipitation (inches)");
+        System.out.println("********************************************************");
+        System.out.println("\n" + months);
     }
     
 }
