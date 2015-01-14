@@ -12,8 +12,8 @@ class AnnualClimatev1 {
         String c = "C";
         String inches = "Inches";
         String cm = "cm";
-        String city = "Miami";
-        String state = "Florida";
+        String city = "";
+        String state = "";
         
         //Declare the Arrays
         String months [] = {"January",
@@ -36,7 +36,7 @@ class AnnualClimatev1 {
         System.out.println("Location: " + city + ", " + state);
         System.out.println("Month\t" + "Temperature (F)\t" + "Precipitation (inches)");
         System.out.println("********************************************************");
-        System.out.println("\n" + months);
+        System.out.println(months + "\n");
     }
     
 }
