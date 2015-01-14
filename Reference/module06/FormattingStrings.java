@@ -1,3 +1,4 @@
+package Reference.module06;
 
 /**
  * This program demonstrates how to format strings with the printf() method.
