@@ -5,15 +5,31 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-class HeatIndex
-{
+/**
+ * Project title: 06.03 The for-each Loop
+ *
+ * Purpose of Project: Calculates the temp and humidity for Key West Florida.
+ *
+ * @version 12/15/2014
+ *
+ * @author Omar Rahman
+ *
+ * *********** PMR ***********
+ * (+) Understood how arrays work.
+ *
+ * (-) Need to understand for loops and printf more.
+ * ***************************
+ *
+ * In the future: Practice/Review
+ */
 
-	public static void main (String [ ] args) throws IOException
-	{
+class HeatIndex {
+
+	public static void main (String [ ] args) throws IOException {
 
 		//KeyWestTemp
 		double [] temperatures = new double[13];
-		File temp = new File("Files/KeyWestTemp.txt");
+		File temp = new File("Files/KeyWestTemp.txt"); //Change depends on where the file is stored.
 		Scanner inFile = new Scanner(temp);
 		int index = 0;
 
@@ -33,7 +49,7 @@ class HeatIndex
 		//KeyWestHumid
 		index = 0;
 		double [] humidities = new double[12];
-		File humid = new File("Files/KeyWestHumid.txt");
+		File humid = new File("Files/KeyWestHumid.txt"); //Change depends on where the file is stored.
 		inFile = new Scanner(humid);
 
 		while (inFile.hasNextDouble())
