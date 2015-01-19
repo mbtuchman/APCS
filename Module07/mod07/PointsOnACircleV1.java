@@ -1,8 +1,21 @@
 package Module07.mod07;
 
 /**
- * @author Omar Rahman
+ * Project title: 07.01 Javas Math Class
+ *
+ * Purpose of Project: Calculates the points on a circle of radius 1.0.
+ *
  * @version 1/18/2015
+ *
+ * @author Omar Rahman
+ *
+ * *********** PMR ***********
+ * (+) Got for loops better.
+ *
+ * (-) Practice printf.
+ * ***************************
+ *
+ * In the future: Practice and use eImacs.
  */
 
 public class PointsOnACircleV1 {

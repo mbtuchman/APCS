@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * Purpose of Project: Calculates the temp and humidity for Key West Florida.
  *
- * @version 12/15/2014
+ * @version 1/18/2015
  *
  * @author Omar Rahman
  *
