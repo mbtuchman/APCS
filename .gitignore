@@ -8,3 +8,4 @@ bin/*
 .idea/tasks.xml
 APCS-Segment1.iml
 output.txt
+out
