@@ -33,6 +33,7 @@ public class Hurricanes2 {
         //Convert wind speed (Knots to MPH)
         //1 knot(kt) = 1.15077 MPH
 
+
         //Min, max and average for wind speed and pressure
 
         //Output
