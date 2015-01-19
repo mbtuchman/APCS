@@ -15,9 +15,9 @@ import java.util.Scanner;
  * @author Omar Rahman
  *
  * *********** PMR ***********
- * (+) Understood how arrays work.
+ * (+) Understood how arrays work better with for-each loops.
  *
- * (-) Need to understand for loops and printf more.
+ * (-) Printf is still kind of confusing and need a good amount of practice with it and arrays.
  * ***************************
  *
  * In the future: Practice/Review
