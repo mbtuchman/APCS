@@ -14,7 +14,8 @@ import java.io.IOException;
 
 public class HeatIndex
 {
-    public static void main(String[] args) throws IOException
+    @SuppressWarnings("unused")
+	public static void main(String[] args) throws IOException
     {
     	//initialize and declare vars
 

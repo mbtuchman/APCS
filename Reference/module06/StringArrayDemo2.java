@@ -9,7 +9,8 @@ package Reference.module06;
 import java.util.Scanner;
 public class StringArrayDemo2
 {
-    public static void main(String [] args)
+    @SuppressWarnings("resource")
+	public static void main(String [] args)
     {
         String [] names = {"Sleepy","Sneezy","Doc","Dopey","Happy","Bashful","Grumpy"};
         int dwarfNum = 0;

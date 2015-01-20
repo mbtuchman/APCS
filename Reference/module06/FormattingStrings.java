@@ -14,7 +14,8 @@ package Reference.module06;
  */
 public class FormattingStrings
 {
-    public static void main(String [] args)
+    @SuppressWarnings("unused")
+	public static void main(String [] args)
     {
         String argument1 = "Tallahassee";
         String argument2 = "Florida";

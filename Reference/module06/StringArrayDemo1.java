@@ -10,7 +10,8 @@ package Reference.module06;
 import java.util.Scanner;
 public class StringArrayDemo1
 {
-    public static void main(String [] args)
+    @SuppressWarnings("resource")
+	public static void main(String [] args)
     {
         String [ ] dwarfNames;
         int dwarfNum = 0;

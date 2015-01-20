@@ -14,7 +14,8 @@ package Reference.module06;
  */
 public class FormattingNumericValues
 {
-    public static void main(String [] args)
+    @SuppressWarnings("unused")
+	public static void main(String [] args)
     {
         int intArgument1 = 16934;
         int intArgument2 = 12;
