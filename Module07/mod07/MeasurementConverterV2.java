@@ -45,42 +45,43 @@ public class MeasurementConverterV2 {
     public static double convertMilesToKilometers(double mi)
     {
         //return statement calculate kilometers goes here
-        return mi;
+        return mi * 5280;
     }
 
     //convert kilometers to miles
     public static double convertKilometersToMiles(double km)
     {
         //return statement to calculate miles goes here
-        return km;
+        return km / 1.6;
     }
 
     //convert pounds to kilograms
     //method header to convert pounds to kilograms goes here
-    {
-        //return statement to calculate kilograms goes here
+    public static double convertKilogramsToPounds(double kg) {
+    	return kg * 2.046;
     }
 
-    //convert kilograms to pounds
-    // method header to convert kilograms to pounds goes here
-    {
-        //return statement to calculate pounds goes here
+    //convert liters to gallons
+    public static double convertLitersToGallons(double gal) {
+    	return gal / 0.26417;
     }
-
-
-
+    
+    //convert gallons to liters
+    public static double convertGallonsToLiters(double liters) {
+    	return liters * 0.26417;
+    }
 
     @SuppressWarnings("unused")
 	public static void main(String[ ] args) {
         //local variables
-        //double miles, feet, inches, pounds, gallons;
-        //double kilometers, kilograms, liters;
+        double miles, feet, inches, pounds, gallons;
+        double kilometers, kilograms, liters;
 
         //variable declaration and initialization
 
         printPurpose();                                    //invoke the printPurpose() method
-        double feet = 6230;
-        double miles = convertFeetToMiles(feet);            //invoke the convertFeetToMiles() static method and pass the feet variable as an argument
+        feet = 6230;
+        miles = convertFeetToMiles(feet);            //invoke the convertFeetToMiles() static method and pass the feet variable as an argument
         System.out.printf("%8.1f ft. = %7.1f mi. %n", feet, miles);
 
         miles = 1.9;
@@ -88,28 +89,29 @@ public class MeasurementConverterV2 {
         System.out.printf("%8.1f mi. = %7.1f ft. %n", miles, feet);
 
         miles = 22.3;
-        double kilometers = convertMilesToKilometers(miles);
+        kilometers = convertMilesToKilometers(miles);
         System.out.printf("%8.1f mi. = %7.1f km. %n", miles, kilometers);
 
         kilometers = 1000.0;
-        //call method to convert kilometers to miles goes here
-        //print results goes here
+        miles = convertMilesToKilometers(kilometers);
+        System.out.printf("%8.1f km. = %7.1f km. %n", miles, kilometers);
 
-        double pounds = 204;
+        pounds = 204;
         //call method to convert pounds to kilograms goes here
-        //print results goes here
+        kilograms = convertKilogramsToPounds(pounds);
+        System.out.printf("%8.1f lb. = %7.1f km. %n", kilograms, pounds);
 
-        //declare and initialize the kilograms variable goes here
-        //call method to convert kilograms to pounds goes here
-        //print results goes here
+        kilograms = 160;
+        pounds = convertKilogramsToPounds(kilograms);
+        System.out.printf("%8.1f kg. = %7.1f km. %n", kilograms, pounds);
 
-        //declare and initialize the gallons variable goes here
-        //call method to convert gallons to liters goes here
-        //print results goes here
+        gallons = 200;
+        liters = convertGallonsToLiters(gallons);
+        System.out.printf("%8.1f mi. = %7.1f km. %n", gallons, liters);
 
-        //declare and initialize the liters variable goes here
-        //call method to convert liters to gallons goes here
-        //print results goes here
+        liters = 170;
+        gallons = convertGallonsToLiters(liters);
+        System.out.printf("%8.1f mi. = %7.1f km. %n", liters, gallons);
 
     }
 
