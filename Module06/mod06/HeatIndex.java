@@ -25,6 +25,7 @@ import java.util.Scanner;
 
 class HeatIndex {
 
+	@SuppressWarnings("unused")
 	public static void main (String [ ] args) throws IOException {
 
 		//KeyWestTemp

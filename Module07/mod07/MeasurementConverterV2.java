@@ -70,7 +70,8 @@ public class MeasurementConverterV2 {
 
 
 
-    public static void main(String[ ] args) {
+    @SuppressWarnings("unused")
+	public static void main(String[ ] args) {
         //local variables
         //double miles, feet, inches, pounds, gallons;
         //double kilometers, kilograms, liters;

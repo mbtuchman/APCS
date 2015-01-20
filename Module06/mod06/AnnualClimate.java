@@ -23,7 +23,8 @@ import java.util.Scanner;
 
 class AnnualClimate {
     
-    public static void main(String[] args) {
+    @SuppressWarnings({ "resource", "unused" })
+	public static void main(String[] args) {
         
         //Decalre the scanner
         Scanner in = new Scanner(System.in);
