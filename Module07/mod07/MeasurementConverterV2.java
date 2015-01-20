@@ -5,7 +5,7 @@ package Module07.mod07;
  *
  * Purpose of Project: Explore new static methods.
  *
- * @version 1/19/2015
+ * @version 1/20/2015
  *
  * @author Omar Rahman
  *
