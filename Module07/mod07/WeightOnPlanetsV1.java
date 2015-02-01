@@ -22,7 +22,7 @@ import java.util.Scanner;
 import java.io.File;
 import java.io.IOException;
 
-public class Weight {
+public class WeightOnPlanetsV1 {
     
     public static double [] gravity()throws IOException {	  
 		int iterate = 0;
