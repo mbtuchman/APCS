@@ -50,12 +50,12 @@ public class WeightOnPlanetsV1 {
 	        System.out.println();
 	    }
    }
-   public static void main()throws IOException {
+   public static void main(String[] args) throws IOException {
         String [] planet = {"Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"};
 	    double gravities[] = gravity();
 	    double[] weight = new double[9];
 	    weight = pounds(gravities, weight);
 	    print(gravities, weight, planet);
    }
-   
+
 }
