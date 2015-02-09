@@ -34,7 +34,7 @@ public class Family {
 		
 		File fileName = new File("Files/MaleFemaleInFamily.txt");
 		Scanner inFile = new Scanner(fileName);
-		while (inFile.hasNextLine()) {
+		while (inFile.hasNext()){
 			String token = inFile.next();
 			if (token.equals("BB")) {
 				countBB++;
