@@ -50,10 +50,10 @@ public class CarV3 {
         double price;
         double cost;
         
-        gals = 10.4;
-        sMiles = 107603;
-        eMiles = 107706;
-        price = 3.05;
+        gals = 12.2;
+        sMiles = 110000;
+        eMiles = 110100;
+        price =  1.89; //As of Tuesday, Feb 10th, 2015
 
         car = "2000 BMW 328i";
         
