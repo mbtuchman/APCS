@@ -57,7 +57,7 @@ public class CarV3 {
         return cost;
     }
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         
         double gals;
         int sMiles;
