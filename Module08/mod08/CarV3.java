@@ -1,47 +1,40 @@
 package Module08.mod08;
 
-import java.io.PrintWriter;
+public class CarV3 {
 
-public class CarV5 {
+    private String carType;
+    private double costOfTrip;
+    private double milesPerGallon;
+    private double gallonsPerMile;
+    private double gallonsUsed;
+    private double pricePerGallon;
+    private int endMiles;
+    private int startMiles;
 
-        private String carType;
-        private int endMiles;
-        private int startMiles;
-        private double gallonsUsed;
-        private double pricePerGallon;
-        private double costOfTrip;
-        private double milesPerGallon;
-        private double gallonsPerMile;
-
-    public CarV5(String type, int endMi, int startMi, double galUsed, double pricePerGal, double costOfGals, double milesPerGal, double galsPerMile )
-    {
-        carType = type;
-        endMiles = endMi;
-        startMiles = startMi;
-        gallonsUsed = galUsed;
+    public CarV3(String type, int endMi, int startMi, double galUsed, double pricePerGal, double costOfGals, double milesPerGal, double galsPerMile) {
         pricePerGallon = pricePerGal;
         costOfTrip = costOfGals;
         milesPerGallon = milesPerGal;
         gallonsPerMile = galsPerMile;
+        carType = type;
+        endMiles = endMi;
+        startMiles = startMi;
+        gallonsUsed = galUsed;
     }
 
-    public int calcDistance()
-    {
+    public int calcDistance() {
         return endMiles - startMiles;
     }
 
-    public double calcMPG()
-    {
+    public double calcMPG() {
         return ((double)calcDistance()) / gallonsUsed;
     }
 
-    public double calcGPM()
-    {
-        return ((double)gallonsUsed)/calcDistance();
+    public double calcGPM() {
+        return gallonsUsed / calcDistance();
     }
 
-    public double calcCost()
-    {
+    public double calcCost() {
         double cost = (gallonsUsed * pricePerGallon);
         return cost;
     }
@@ -64,7 +57,7 @@ public class CarV5 {
 
         car = "2000 BMW 328i";
         
-        CarV5 car1 = new CarV5(car, eMiles, sMiles, gals, price, gals *price, ((eMiles - sMiles)/gals), gals/price);
+        CarV3 car1 = new CarV3(car, eMiles, sMiles, gals, price, gals *price, ((eMiles - sMiles)/gals), gals/price);
         
         cost = car1.calcCost();
         
