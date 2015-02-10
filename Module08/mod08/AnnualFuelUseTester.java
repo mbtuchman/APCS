@@ -18,7 +18,7 @@ package Module08.mod08;
  * In the future: Practice.
  */
 
-public class AnnualFuelUseTeser {
+public class AnnualFuelUseTester {
 
     public void main(String[] args) {
 
