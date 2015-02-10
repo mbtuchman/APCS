@@ -32,7 +32,7 @@ public class Hurricanes2 {
 
         //Convert wind speed (Knots to MPH)
         //1 knot(kt) = 1.15077 MPH
-
+        
 
         //Min, max and average for wind speed and pressure
 
@@ -41,8 +41,6 @@ public class Hurricanes2 {
         System.out.println();
         System.out.println("Year     Hurricane    Category     Pressure (mb)     Wind Speed (mph)");
         System.out.println("=====================================================================");
-
-
 
         System.out.println("=====================================================================");
 
