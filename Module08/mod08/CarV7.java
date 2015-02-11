@@ -5,7 +5,7 @@ package Module08.mod08;
  *
  * Purpose of Project: Calculates the gas mileage on an example car.
  *
- * @version 2/10/2015
+ * @version 2/11/2015
  *
  * @author Omar Rahman
  *
@@ -29,15 +29,15 @@ public class CarV7 {
     private double milesPerGallon;
     private double gallonsPerMile;
 
-    public CarV7(String type, int endMi, int startMi, double galUsed, double pricePerGal, double costOfGals, double milesPerGal, double galsPerMile) {
+    public CarV7(String type, int endMi, int startMi, double galUsed, double pricePerGal, double costOfGals) {
         carType = type;
         endMiles = endMi;
         startMiles = startMi;
         gallonsUsed = galUsed;
         pricePerGallon = pricePerGal;
         costOfTrip = costOfGals;
-        milesPerGallon = milesPerGal;
-        gallonsPerMile = galsPerMile;
+        milesPerGallon = milesPerGallon;
+        gallonsPerMile = gallonsPerMile;
     }
 
     public int calcDistance() {
@@ -64,12 +64,12 @@ public class CarV7 {
         return pricePerGallon;
     }
 
-    public double calcMPG() {
-        return ((double)calcDistance()) / gallonsUsed;
-    }
-
     public double calcGPM() {
         return gallonsUsed / calcDistance();
+    }
+
+    public double calcMPG() {
+        return calcDistance() / gallonsUsed;
     }
 
     public double calcCost() {
