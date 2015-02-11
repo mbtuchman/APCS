@@ -146,8 +146,8 @@ public class AnnualFuelUseTester {
         System.out.printf("Minimum:                                     %3d %25.1f %8.2f\n", minDistance, minMPG, minPrice);
 
         System.out.printf("Maximum:                                     %3d %25.1f %8.2f\n", maxDistance, maxMPG, maxPrice);
-        System.out.printf("Totals:                                      %3d %12.2d %31.2f\n", totalDistance, totalGalsUsed, totalCost);
-        System.out.printf("Annual Projection:                           %5f %11.2f %12.2f %17.2f", yearlyDistance, yearlyCost, yearlyGallons, yearlyCost);
+        System.out.println("Totals:                                      " + totalDistance + " " + totalGalsUsed + " " + totalCost);
+        System.out.println("Annual Projection:                           " + yearlyDistance + " " + yearlyCost + " " + yearlyGallons + " " + yearlyCost);
     }
 
 }
