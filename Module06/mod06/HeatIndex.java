@@ -24,7 +24,7 @@ import java.util.Scanner;
 
 class HeatIndex {
 
-	public void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException {
 
 		String location = "";
 		File fileNameTemp = new File("Files/KeyWestTemp.txt");
@@ -98,18 +98,25 @@ class HeatIndex {
 
 		System.out.print("Temp (F)	  ");
 
-		//TODO place for:each loop to print temp
-		//TODO print average
+        for (Double temperature : temp) {
+            System.out.printf("     %3.3f", temperature);
+        }
 
 		System.out.println();
 
 		System.out.print("Humidity (%)");
-		//TODO for:each loop to print humidty
+
+        for (Integer humid : humidity) {
+            System.out.printf("     %d", humid); //This won't print right for some reason
+        }
 
 		System.out.println();
 
 		System.out.print("HI (F)	");
-		//TODO for:each loop to print hI
+
+        for (Double HI : hI) {
+            System.out.printf("     %f", HI);
+        }
 
 		System.out.println();
 
