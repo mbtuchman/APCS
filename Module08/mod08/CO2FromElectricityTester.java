@@ -20,11 +20,11 @@ package Module08.mod08;
 
 import java.util.ArrayList;
 
-public class C02FromElectricityTester {
+public class CO2FromElectricityTester {
 
     public static void main(String[] args) {
 
-        C02FromElectricity c02Electric = new C02FromElectricity();
+        CO2FromElectricity c02Electric = new CO2FromElectricity();
 
         ArrayList<Double> yearLongBills = new ArrayList();
 

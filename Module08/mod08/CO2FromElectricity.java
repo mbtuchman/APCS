@@ -20,7 +20,7 @@ package Module08.mod08;
 
 import java.util.ArrayList;
 
-public class C02FromElectricity {
+public class CO2FromElectricity {
 
     double calcAverageBill(ArrayList<Double> monthlyBill) {
         double total = 0;
