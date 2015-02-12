@@ -24,7 +24,7 @@ public class CO2FootprintV1Tester {
         //Declare variables
         double gals, tonsC02, poundsC02;
 
-        gals = 1000.0; //TODO change this to number from previous assignment
+        gals = 1000.0;
 
         CO2FootprintV1 footprint = new CO2FootprintV1(gals);
 

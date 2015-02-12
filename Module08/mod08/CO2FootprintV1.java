@@ -48,7 +48,7 @@ public class CO2FootprintV1 {
 
     /*
     Method to calculate tons of C02 emitted
-    @return myTonsC02 multiplied by the gallons used and the formula to calculate
+    myTonsC02 multiplied by the gallons used and the formula to calculate
      */
     public void calcTonsC02() {
         myTonsC02 = myGallonsUsed * (8.78 * Math.pow(10, -3));
@@ -56,7 +56,7 @@ public class CO2FootprintV1 {
 
     /*
     Method to convert Tons to Pounds
-    @return double myPoundsC02 is equal to Tons multiplied by 2204.6 (Amount of pounds in a ton)
+    myPoundsC02 is equal to Tons multiplied by 2204.6 (Amount of pounds in a ton)
      */
     public void convertTonsToPoundsC02() {
         myPoundsC02 = (myTonsC02 * 2204.6);
