@@ -29,6 +29,9 @@ public class CarV3 {
     private int endMiles;
     private int startMiles;
 
+    //Default constructor
+    public CarV3() {}
+
     public CarV3(String type, int endMi, int startMi, double galUsed, double pricePerGal, double costOfGals, double milesPerGal, double galsPerMile) {
         pricePerGallon = pricePerGal;
         costOfTrip = costOfGals;
