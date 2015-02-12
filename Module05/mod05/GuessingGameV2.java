@@ -26,11 +26,9 @@ public class GuessingGameV2 {
 	public static void main(String[] args) {
 		
 		//Declare the scanner method
-		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		
 		//Declare the variables
-		@SuppressWarnings("unused")
 		Random random = new Random();
 		int tries = 0;
 		int guess;
@@ -45,8 +43,8 @@ public class GuessingGameV2 {
 		int randomNumber = (int)(Math.random() * (highest - lowest) + lowest);
 		
 		//While the user didn't win yet
-		while (win == false) {
-			//Prompt user for guesss
+		while (!win) {
+			//Prompt user for a guess
 			System.out.println("Enter your guess (1 - 100):  ");
 			guess = in.nextInt();
 			tries++;

@@ -25,11 +25,9 @@ import java.util.Scanner;
 public class Lottery {
 	
 	public static void main(String[] args) {
-		
-		@SuppressWarnings("resource")
+
 		Scanner in = new Scanner(System.in);
-		
-		@SuppressWarnings("unused")
+
 		Random random = new Random();
 		String randomNumber = "";
 		String guess = "";
