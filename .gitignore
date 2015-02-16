@@ -51,4 +51,7 @@ crashlytics-build.properties
 # Ignore Reference folder
 Reference/
 
+#Ignore bin file
+bin/
+
 
