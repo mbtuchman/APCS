@@ -1,0 +1,12 @@
+bin/*
+.metadata/*
+.classpath
+.project
+.settings/*
+.c9/*
+.idea/workspace.xml
+.idea/tasks.xml
+APCS-Segment1.iml
+output.txt
+out
+/bin/
