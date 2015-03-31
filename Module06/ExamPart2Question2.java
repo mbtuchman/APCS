@@ -1,13 +1,9 @@
 package Module06;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 /**
  * Created by iberamen on 3/31/15.
  */
+
 public class ExamPart2Question2 {
 
     public static void main(String[] args) {
