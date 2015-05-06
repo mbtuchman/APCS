@@ -40,6 +40,7 @@ class HeatIndex {
 		double[] hI = new double[length];
 
 		//Input
+        //Temperature (Double)
 		int n = 0;
 		while (inFileTemp.hasNextDouble()) {
 			temp[n] = inFileTemp.nextDouble();
@@ -48,10 +49,11 @@ class HeatIndex {
 		}
 		inFileTemp.close();
 
+        //Humid (Int)
 		n = 0;
-		while (inFileHumid.hasNextDouble()) {
-			temp[n] = inFileHumid.nextDouble();
-			System.out.println(temp[n]);
+		while (inFileHumid.hasNextInt()) {
+            humidity[n] = inFileHumid.nextInt();
+			System.out.println(humidity[n]);
 			n++;
 		}
 		inFileHumid.close();
@@ -107,7 +109,7 @@ class HeatIndex {
 		System.out.print("Humidity (%)");
 
         for (Integer humid : humidity) {
-            System.out.printf("     %d", humid); //This won't print right for some reason
+            System.out.printf("     %d", humid);
         }
 
 		System.out.println();
