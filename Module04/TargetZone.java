@@ -25,7 +25,6 @@ public class TargetZone
     public static void main(String[] args)
     {
         //Initialize Scanner and declare variables
-        @SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
         
         // Explain what the program does
@@ -34,7 +33,6 @@ public class TargetZone
         
         //Prompt user for input
         System.out.println("What is your age?  ");
-        @SuppressWarnings("unused")
 		int age = in.nextInt();
         System.out.println("What is your resting heart rate (RHR)?  ");
         int rhr = in.nextInt();
@@ -50,15 +48,12 @@ public class TargetZone
         System.out.print("\n");
         
         //Determine if heart rate after exercise is between the min and max
-        boolean isBetween;
-        boolean isNotBetween;
-        isNotBetween = hre >= highEnd;
-        isBetween = hre <= highEnd;
-        if (isBetween == true) {
+        boolean isBetween = hre <= highEnd;
+        if (hre <= highEnd && hre >= lowEnd) {
         	System.out.println("You are between the min and max heart rate after excercise.");
         }
-        if (isNotBetween == true) {
-        	System.out.println("You are NOT between the min and max heart rate after excercise.");
+        else {
+            System.out.println("You are NOT between the min and max heart rate after excercise.");
         }
         System.out.print("\n");
 
