@@ -35,17 +35,17 @@ public class GuessingGameV2 {
 		boolean win = false;
 		
 		//Ask the user for the range
+        System.out.print("Please input the lowest value in your range: ");
+        int lowest = in.nextInt();
 		System.out.println("Please input the highest value in your range: ");
 		int highest = in.nextInt();
-		System.out.print("Please input the lowest value in your range: ");
-		int lowest = in.nextInt();
 		//Generate a random number within the inputed range
 		int randomNumber = (int)(Math.random() * (highest - lowest) + lowest);
 		
 		//While the user didn't win yet
 		while (!win) {
 			//Prompt user for a guess
-			System.out.println("Enter your guess (1 - 100):  ");
+			System.out.println("Enter your guess " + lowest + " - " + highest);
 			guess = in.nextInt();
 			tries++;
 			
