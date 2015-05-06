@@ -25,7 +25,6 @@ public class MediaCenterFines {
 	public static void main(String[] args) {
 		
 		// Construct the Scanner Object
-		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		
 		// Ask the user for their First, Last name and Social Security
@@ -56,7 +55,7 @@ public class MediaCenterFines {
 		int lastNameLength = lastName.length();
 		int halfOfLastName =  lastNameLength / 2;
 		int socialSecurityLength = String.valueOf(socialSecurity).length();
-		int last4DigitsOfssn = socialSecurityLength % 9;
+		int last4DigitsOfssn = socialSecurityLength % 10000;
 		
 		System.out.println("To: " + lastName + "" + firstName + "								Account: " + firstName + halfOfLastName + "-" + last4DigitsOfssn);
 		System.out.println("From: Omar");
