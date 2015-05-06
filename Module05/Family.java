@@ -55,23 +55,22 @@ public class Family {
 		}
 		
 		int size = count;
+
+        int totalGB = countGB + countBG;
 		
 		System.out.println("Sample size: " + size);
 		System.out.println("Families with two boys: " + countBB);
 		System.out.println("Families with two girls: " + countGG);
-		System.out.println("Families with one boy, one girl: " + countBG);
-		System.out.println("Families with one girl, one boy: " + countGB);
+		System.out.println("Families with one boy, one girl (Or vise versa): " + totalGB);
 		System.out.print("\n");
 		
 		inFile.close();
 		double bbPercent = countBB / (double)size * 100;
 		double ggPercent = countGG / (double)size * 100;
-		double bgPercent = countBG / (double)size * 100;
-		double gbPercent = countGB / (double)size * 100;
+        double totalGBPercent = countGB + countBG / (double)size * 100;
 
 		System.out.println("Probability of Two Boys: " + bbPercent + "%");
 		System.out.println("Probability of Two Girls: " + ggPercent + "%");
-		System.out.println("Probability of One boy, one girl: " + bgPercent + "%");
-		System.out.print("Probability of One girl, one boy: " + gbPercent + "%");
+		System.out.println("Probability of One boy, one girl (Or vise versa): " + totalGBPercent + "%");
 	}
 }
