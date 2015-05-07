@@ -22,8 +22,7 @@ import java.util.Scanner;
 
 
 class AnnualClimate {
-    
-    @SuppressWarnings({ "resource", "unused" })
+
 	public static void main(String[] args) {
         
         //Decalre the scanner
@@ -52,7 +51,7 @@ class AnnualClimate {
         //User input
         System.out.println("Choose the temperature scale (F = Fahrenheit, C = Celsius): ");
         choiceTemp = in.nextLine();
-        System.out.print("Choose the precipitation scale (i = Inches, c = Centimeteres): ");
+        System.out.print("Choose the precipitation scale (I = Inches, CM = Centimeteres): ");
         choiceLength = in.nextLine();
         
         //If user chose F
