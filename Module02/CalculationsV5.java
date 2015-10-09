@@ -1,23 +1,16 @@
-package Module02;
-
 /**
- * Project title: 02.04 Primitive Data Types
+ * @author Max Tuchman (me@mbtuchman.com)
+ * @description Quick intro to Data Types, double, static, and int.
  * 
- * Purpose of Project: The Calculations class performs addition, subtraction,
- * multiplication, division, and modulus operations on integers and
- * decimals.
+ * -=-=-=-= Begin PMR (Post Mortem Review) =-=-=-=-
+ * Pluses:
+ * + Using variables is sometimes better than writing the variable into a string. (Allows for more versatility)
+ * + BlueJ has some features that eclipse does not. But lacks in other fields.
  * 
- * @version 11/1/2014
- * 
- * @author Omar Rahman
- * 
- * *********** PMR ***********
- * (+) Learned the difference between double, int, print and println.
- * 
- * (-) Formatting took a long time.
- * ***************************
- * 
- * In the future: Take advantage of Eclipse's formatting feature/plugin.
+ * Minuses:
+ * - Using variables, which could have been put into a actual string, is counter-productive, unless you are making a statement via that variable.
+ * - BlueJ (Not trying to hate, but eclipse is better)
+ * -=-=-=-= End PMR (Post Mortem Review) =-=-=-=-
  */
 
 public class CalculationsV5
@@ -56,15 +49,15 @@ public class CalculationsV5
         System.out.println("43.21 divided by 5.0 equals " + (43.21 / 5.0 ));
         System.out.println();
          
-        // Modulus operator
+        // Modulus
         System.out.println("Modulus");
         System.out.println("16 % 9 equals " + (16 % 9 ));
         System.out.println("5.0 % 3.14 equals " + (5.0 % 3.14 ));
         System.out.println();
         
         // 2.02 Lab Equations
+        System.out.println("New Calculations from 2.02 Lab");
         // 15 divided by 2.5 times -2 plus 10 / 5
-        System.out.println("2.02 Lab Equations");
         System.out.println("15 divided by 2.5 times -2 plus 10 / 5 equals " + (15 / 2.5 * -2 + 10 / 5));
         // 234 minus (234 divided by 6 modulus 12) + 3
         System.out.println("234 minus (234 divided by 6 modulus 12) + 3 equals " + (234 / (234 / 6 % 12) + 3));
