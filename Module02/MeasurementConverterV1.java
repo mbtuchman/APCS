@@ -32,12 +32,10 @@ public class MeasurementConverterV1
         double feetPerMile = 5280; // feet per mile
         double kilometersPerMile = 0.62137; // km per mile
 
-
         // Converts feet to miles
         feet = 6230;
         miles = feet / feetPerMile;
         System.out.println(feet + " ft. = " + miles + " mi.");
-
 
         // Converts miles to feet
         miles = 2;
@@ -83,7 +81,6 @@ public class MeasurementConverterV1
         inches = 1;
         feet = inches * feetPerInch;
         System.out.println(inches + " inch = " + feet + " ft.");
-
 
     } // method main end
 } // class end
