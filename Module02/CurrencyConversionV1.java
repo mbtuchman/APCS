@@ -13,6 +13,10 @@
  * <> Find a currency conversion library. 
  * <> Figure out a cleaner way to do currency conversion.
  * -=-=-=-= End PMR (Post Mortem Review) =-=-=-=-
+ *
+ * CURRENCY SOURCE: https://corp.google.com/finance/currency-conversion/
+ * CURRENT AS OF: October 11th, 2015 (6:18 PM Eastern Standard)
+ * 
  */
 
 public class CurrencyConversionV1
@@ -21,11 +25,11 @@ public class CurrencyConversionV1
     {
         double startingUSDollars = 5000.00;		// local variable for US Dollars.
         double pesosSpent = 7210.25;            // local variable for Mexican pesos spent.
-        double pesoExchangeRate = 13.5011;    // local variable for exchange rate of US Dollars to Pesos.
+        double pesoExchangeRate = 16.43;    // local variable for exchange rate of US Dollars to Pesos.
         double yensSpent = 99939.75;		// local variable for Yens spent.
-        double yenExchangeRate = 113.655;	  // local variable for exchange rate of US Dollars to Yen.
+        double yenExchangeRate = 120.18;	  // local variable for exchange rate of US Dollars to Yen.
         double eurosSpent = 624.95;			// local variable for Euros spent in Europe.
-        double euroExchangeRate =  1.24965;	// local variable for exchange rate of US Dollars to Euros.
+        double euroExchangeRate =  0.88;	// local variable for exchange rate of US Dollars to Euros.
         double dollarsSpentInMexico = pesosSpent / pesoExchangeRate;      // local variable for dollars spent in Mexico.
         double dollarsSpentInJapan = yensSpent / yenExchangeRate;	// local variable for dollars spent in Japan.
         double dollarsSpentInEurope = eurosSpent / euroExchangeRate;		// local variable for dollars spent in Europe.
@@ -70,7 +74,7 @@ public class CurrencyConversionV1
 	int totalItem1 = budget1 / costItem1; // Number of purchaseable items (first item)
 	double fundsRemaining1 = budget1 % totalItem1; // Budget left (first item)
 
-	System.out.println("Item 1");
+	System.out.println("Item 1:");
 	System.out.println("   Cost per item: $" + costItem1);
 	System.out.println("   Budget: $"+ budget1);
 	System.out.println("   Total items purchased:" + " " + totalItem1);
@@ -82,7 +86,7 @@ public class CurrencyConversionV1
 	int totalItem2 = (int) (budget2 / costItem2); // Number of purchaseable items (second item)
 	double fundsRemaining2 = budget2 % totalItem2; // Budget left (second item)
 
-	System.out.println("Item 2");
+	System.out.println("Item 2:");
 	System.out.println("   Cost per item: $" + costItem2);
 	System.out.println("   Budget: $"+ budget2);
 	System.out.println("   Total items purchased:" + " " + totalItem2);
