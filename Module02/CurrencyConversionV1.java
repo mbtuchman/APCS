@@ -1,25 +1,18 @@
-package Module02;
-
 /**
- * Project title: 02.08 Challenge Program
+ * @author Max Tuchman (me@mbtuchman.com)
+ * @description 02.08 Challenge Program
  * 
- * Purpose of Project: The CurrencyConversion class converts an amount of money from a specific
- * country into the equivalent currency of another country given the current
- * exchange rate.
- *
- * @version 11/3/2014
+ * -=-=-=-= Begin PMR (Post Mortem Review) =-=-=-=-
+ * Pluses:
+ * + I found out how to make a currency conversion software. (command line based, of course)
  * 
- * @author Omar Rahman
+ * Minuses:
+ * - It was confusing not to use multiplication or subtraction. More research needed. 
  * 
- * *********** PMR ***********
- * (+) Learned how to exchange rates using current rates at the time.
- * 
- * (-) Had some trouble not using multiplication and subtraction but found work-arounds.
- * ***************************
- * 
- * In the future: Learn how to cast better.
- * 
- * Site used for exchange rates: http://xe.com/
+ * Future research: 
+ * <> Find a currency conversion library. 
+ * <> Figure out a cleaner way to do currency conversion.
+ * -=-=-=-= End PMR (Post Mortem Review) =-=-=-=-
  */
 
 public class CurrencyConversionV1
@@ -78,9 +71,9 @@ public class CurrencyConversionV1
 		double fundsRemaining1 = budget1 % totalItem1;  //how much of the budget is left
 
 		System.out.println("Item 1");
-		System.out.println("   Cost per item: $" + costItem1 );
+		System.out.println("   Cost per item: $" + costItem1);
 		System.out.println("   Budget: $"+ budget1);
-		System.out.println("   Total items purchased: " +  totalItem1);
+		System.out.println("   Total items purchased:" + " " + totalItem1);
 		System.out.println("   Funds remaining: $"  +  fundsRemaining1);
 
 		//Calculations for Souvenir #2
@@ -90,9 +83,9 @@ public class CurrencyConversionV1
 		double fundsRemaining2 = budget2 % totalItem2;  	//how much of the budget is left // I am not sure why the output is 33.
 
 		System.out.println("Item 2");
-		System.out.println("   Cost per item: $" + costItem2 );
+		System.out.println("   Cost per item: $" + costItem2);
 		System.out.println("   Budget: $"+ budget2);
-		System.out.println("   Total items purchased: " +  totalItem2);
+		System.out.println("   Total items purchased:" + " " + totalItem2);
 		System.out.println("   Funds remaining: $"  +  fundsRemaining2);
 
     } // end of main method
