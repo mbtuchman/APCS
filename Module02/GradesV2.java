@@ -51,7 +51,7 @@ public class GradesV2
         testGrade = 92;
         totalPoints += testGrade;
         numTests++;
-        average = totalPoints / (double)numTests;
+        average = totalPoints / numTests;
         System.out.print("n = " + numTests);
         System.out.print("   New Test:" + " " + testGrade);
         System.out.print("   Total Points:" + " " + totalPoints);
@@ -61,7 +61,7 @@ public class GradesV2
         testGrade = 95;
         totalPoints += testGrade;
         numTests++;
-        average = totalPoints / (double)numTests;
+        average = totalPoints / numTests;
         System.out.print("n = " + numTests);
         System.out.print("   New Test:" + " " + testGrade);
         System.out.print("   Total Points:" + " " + totalPoints);
@@ -74,7 +74,7 @@ public class GradesV2
         testGrade = 111;
         totalPoints += testGrade;
         numTests++;
-        average = totalPoints / (double)numTests;
+        average = totalPoints / numTests;
         System.out.print("n = " + numTests);
         System.out.print("   New Test:" + " " + testGrade);
         System.out.print("   Total Points:" + " " + totalPoints);
@@ -84,7 +84,7 @@ public class GradesV2
         testGrade = 69;
         totalPoints += testGrade;
         numTests++;
-        average = totalPoints / (double)numTests;
+        average = totalPoints / numTests;
         System.out.print("n = " + numTests);
         System.out.print("   New Test:" + " " + testGrade);
         System.out.print("   Total Points:" + " " + totalPoints);
@@ -94,17 +94,17 @@ public class GradesV2
         testGrade = 360;
         totalPoints += testGrade;
         numTests++;
-        average = totalPoints / (double)numTests;
+        average = totalPoints / numTests;
         System.out.print("n = " + numTests);
         System.out.print("   New Test:" + " " + testGrade);
         System.out.print("   Total Points:" + " " + totalPoints);
         System.out.println("   Average Score:" + " " + average);
         
         // My Score 4 of 4
-        testGrade = 4.5;
+        testGrade = 45;
         totalPoints += testGrade;
         numTests++;
-        average = totalPoints / (double)numTests;
+        average = totalPoints / numTests;
         System.out.print("n = " + numTests);
         System.out.print("   New Test:" + " " + testGrade);
         System.out.print("   Total Points:" + " " + totalPoints);
