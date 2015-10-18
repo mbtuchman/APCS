@@ -18,15 +18,14 @@ public class ArtWork
 {
     public static void main(String [ ] args)
     {
-        // Sets ASCII Strings
-        String L1 = "          _______  _______";          
-        String L2 = "(       )(  ___  )|\     /|";
-        String L3 = "| () () || (   ) |( \   / )";
-        String L4 = "| || || || (___) | \ (_) / ";
-        String L5 = "| |(_)| ||  ___  |  ) _ (";
-        String L6 = "| |   | || (   ) | / ( ) \"; 
-        String L7 = "| )   ( || )   ( |( /   \ )";
-        String L8 = "|/     \||/     \||/     \|";
+        // Sets ASCII Strings (L1 = line 1, L2 = line 2, etc.)
+        String L1 = ".##.....##....###....##.....##";
+        String L2 = ".###...###...##.##....##...##.";
+        String L3 = ".####.####..##...##....##.##..";
+        String L4 = ".##.###.##.##.....##....###...";
+        String L5 = ".##.....##.#########...##.##..";
+        String L6 = ".##.....##.##.....##..##...##.";
+        String L7 = ".##.....##.##.....##.##.....##";
         
         // Prints actual ASCII
         System.out.print(L1);
@@ -42,7 +41,6 @@ public class ArtWork
         System.out.print(L6);
         System.out.print("\n");
         System.out.print(L7);
-        System.out.print("\n");
-        System.out.print(L8);
+        
     } // method end
 } // class end
