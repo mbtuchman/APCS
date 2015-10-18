@@ -1,5 +1,4 @@
 /**
- * 
  * @author Max Tuchman (me@mbtuchman.com)
  * @description 03.04 ASCII Art
  * 
