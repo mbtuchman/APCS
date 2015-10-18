@@ -23,18 +23,30 @@ public class ArtWork
     public static void main(String [ ] args)
     {
         //local variables
-        String O = " ****   *     *   ***   ****";
-        String M = "*    *  * * * *  *   *  *   *";
-        String A = "*    *  *  *  *  *****  ****";
-        String R = " ****   *     *  *   *  *   *";
+        String A = "          _______  _______";          
+        String B = "(       )(  ___  )|\     /|";
+        String C = "| () () || (   ) |( \   / )";
+        String D = "| || || || (___) | \ (_) / ";
+        String E = "| |(_)| ||  ___  |  ) _ (";
+        String F = "| |   | || (   ) | / ( ) \"; 
+        String G = "| )   ( || )   ( |( /   \ )";
+        String H = "|/     \||/     \||/     \|";
         
         //print ASCII art
-        System.out.print(O);
-        System.out.print("\n");
-        System.out.print(M);
-        System.out.print("\n");
         System.out.print(A);
         System.out.print("\n");
-        System.out.print(R);
+        System.out.print(B);
+        System.out.print("\n");
+        System.out.print(C);
+        System.out.print("\n");
+        System.out.print(D);
+        System.out.print("\n");
+        System.out.print(E);
+        System.out.print("\n");
+        System.out.print(F);
+        System.out.print("\n");
+        System.out.print(G);
+        System.out.print("\n");
+        System.out.print(H);
     }
 } 
