@@ -1,52 +1,48 @@
-package Module03;
-
 /**
- * Project title: 03.04 ASCII Art
  * 
- * Purpose of Project: This program uses String objects to print an ASCII art message.
+ * @author Max Tuchman (me@mbtuchman.com)
+ * @description 03.04 ASCII Art
  * 
- * @version 11/11/2014
+ * -=-=-=-= PMR =-=-=-=-
+ * Pluses:
+ * + I figured out how to make ASCII with the print method!
+ * + ASCII is really fun!
  * 
- * @author Omar Rahman
- * 
- * *********** PMR ***********
- * (+) Learned to use the print() method to create ASCII art.
- * 
- * (-) Formatting took a long time.
- * ***************************
- * 
- * In the future: Format the ASCII art faster.
+ * Minuses:
+ * - Formating was a pain in the butt.
+ * - Printing the ASCII took a long-ish time. (I'll try to consolidate into a single string in future)
+ * -=-=-=-=-=-=-=-=-=-=-
  */
 
 public class ArtWork
 {
     public static void main(String [ ] args)
     {
-        //local variables
-        String A = "          _______  _______";          
-        String B = "(       )(  ___  )|\     /|";
-        String C = "| () () || (   ) |( \   / )";
-        String D = "| || || || (___) | \ (_) / ";
-        String E = "| |(_)| ||  ___  |  ) _ (";
-        String F = "| |   | || (   ) | / ( ) \"; 
-        String G = "| )   ( || )   ( |( /   \ )";
-        String H = "|/     \||/     \||/     \|";
+        // Sets ASCII Strings
+        String L1 = "          _______  _______";          
+        String L2 = "(       )(  ___  )|\     /|";
+        String L3 = "| () () || (   ) |( \   / )";
+        String L4 = "| || || || (___) | \ (_) / ";
+        String L5 = "| |(_)| ||  ___  |  ) _ (";
+        String L6 = "| |   | || (   ) | / ( ) \"; 
+        String L7 = "| )   ( || )   ( |( /   \ )";
+        String L8 = "|/     \||/     \||/     \|";
         
-        //print ASCII art
-        System.out.print(A);
+        // Prints actual ASCII
+        System.out.print(L1);
         System.out.print("\n");
-        System.out.print(B);
+        System.out.print(L2);
         System.out.print("\n");
-        System.out.print(C);
+        System.out.print(L3);
         System.out.print("\n");
-        System.out.print(D);
+        System.out.print(L4);
         System.out.print("\n");
-        System.out.print(E);
+        System.out.print(L5);
         System.out.print("\n");
-        System.out.print(F);
+        System.out.print(L6);
         System.out.print("\n");
-        System.out.print(G);
+        System.out.print(L7);
         System.out.print("\n");
-        System.out.print(H);
-    }
-} 
+        System.out.print(L8);
+    } // method end
+} // class end
