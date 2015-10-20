@@ -1,21 +1,13 @@
-package Module03;
-
 /**
- * Project title: 03.06 Text Message Coder
+ * @description 03.06 Text Message Coder
  * 
- * Purpose of Project: Modifies strings.
+ * @author Max Tuchman
  * 
- * @version 11/11/2014
+ * -=-=-=-=-= PMR =-=-=-=-=-
+ * + Learned how to modify strings.
  * 
- * @author Omar Rahman
- * 
- * *********** PMR ***********
- * (+) Learned how to modify strings.
- * 
- * (-) Getting the output was a bit difficult.
- * ***************************
- * 
- * In the future: Practice more.
+ * - Generating the correct output was hard.
+ * -=-=-=-=-=-=-=-=-=-=-=-=-
  */
 
 public class TextMessageV1 {
@@ -23,38 +15,35 @@ public class TextMessageV1 {
 	public static void main(String[ ] args) {
 		
 		// Output 1
-		String previousString = "what is life because i dont know";
+		String previousString = "why am i such a script kiddie";
 		System.out.println("String: " + previousString);
 		// String Length
 		int stringLength = previousString.length();
 		System.out.println("Length: " + stringLength);
 		// Replace Characters
-		String replaceCharacters = previousString.replace("what", "wut");
-		replaceCharacters = replaceCharacters.replace("i dont know", "idk");
+		String replaceCharacters = previousString.replace("script kiddie", "skid");
+		replaceCharacters = replaceCharacters.replace("why", "y");
 		System.out.println("Replace: " + replaceCharacters);
 		// Split String
 		int meetMeHalfWay = stringLength / 2;
 		String firstPart = previousString.substring(0, meetMeHalfWay);
 		String secondPart = previousString.substring(meetMeHalfWay, stringLength);
 		String split = secondPart + "-" + firstPart; 
-		System.out.println("Split String:: " + split);
+		System.out.println("Split String: " + split);
 		// Sub String
 		System.out.print("Sub String: ");
 		System.out.println(previousString.substring(5, 8));
 		// Remove Vowels
 		String noVowels = previousString.replaceAll("[aeiou]", "");
-		System.out.println("Replace All: " + noVowels);
+		System.out.println("Remove All Vowels: " + noVowels);
 		// Remove Consonants
-		String noConsonants = previousString.replaceAll("[whtslf]", "");
-		System.out.println("Replace All: " + noConsonants);
+		String noConsonants = previousString.replaceAll("[bcdfghjklmnpqrstvwxyz]", "");
+		System.out.println("Remove All Consonants: " + noConsonants);
 		// IndexOf
 		System.out.print("Index Of: ");
 		System.out.println(previousString.indexOf('w'));
 		System.out.print("Index Of: ");
 		System.out.println(previousString.indexOf('w', '5'));
-        // Replace
-        System.out.print("Replace: ");
-        System.out.println(previousString.replace(previousString, "you just got replaced"));
 	}
 
 }
