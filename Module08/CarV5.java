@@ -1,21 +1,13 @@
-package Module08;
-
 /**
- * Project title: 08.05 Constructors with Parameters.
- *
- * Purpose of Project: Calculates the gas mileage on an example car.
- *
- * @version 2/11/2015
- *
- * @author Omar Rahman
+ * @assignment 08.05 Constructors with Parameters
+ * @description Calculates the gas mileage on an example car
+ * @author Max Tuchman
  *
  * *********** PMR ***********
  * (+) Understood OOP more.
  *
  * (-) Need more practice with OOP.
  * ***************************
- *
- * In the future: Practice.
  */
 
 public class CarV5 {
@@ -71,7 +63,7 @@ public class CarV5 {
         gals = 12.2;
         sMiles = 110000;
         eMiles = 110100;
-        price =  1.89; //As of Tuesday, Feb 10th, 2015
+        price =  1.99;
 
         car = "2000 BMW 328i";
 
