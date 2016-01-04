@@ -1,21 +1,13 @@
-package Module08;
-
 /**
- * Project title: 08.07 Constructing Multiple Objects
- *
- * Purpose of Project: Calculates the gas mileage on an example car.
- *
- * @version 2/11/2015
- *
- * @author Omar Rahman
+ * @assignment 08.07 Constructing Multiple Objects
+ * @description Calculates the gas mileage on an example car.
+ * @author Max Tuchman (me@mbtuchman.com)
  *
  * *********** PMR ***********
  * (+) Understood OOP more.
  *
  * (-) Need more practice with OOP.
  * ***************************
- *
- * In the future: Practice.
  */
 
 public class CarV7Tester {
@@ -41,10 +33,11 @@ public class CarV7Tester {
         String type2;
         String type3;
 
+        price = 1.99;
+
         gals = 11.7;
         startMiles = 110000;
         endMiles = 110100;
-        price = 2.09;
         type = "2001 BMW 328i";
 
         gals2 = 15.2;
