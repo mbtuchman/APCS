@@ -1,21 +1,15 @@
-package Module08;
-
 /**
- * Project title: 08.03 Default constructors.
+ * @assignment 08.03 Default constructors
  *
- * Purpose of Project: Calculates the gas mileage on an example car.
+ * @description Calculates the gas mileage on an example car
  *
- * @version 2/10/2015
- *
- * @author Omar Rahman
+ * @author Max Tuchman (me@mbtuchman.com)
  *
  * *********** PMR ***********
  * (+) Understood OOP more.
  *
  * (-) Need more practice with OOP.
  * ***************************
- *
- * In the future: Practice.
  */
 
 public class CarV3 {
