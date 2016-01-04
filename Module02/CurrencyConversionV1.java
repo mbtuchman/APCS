@@ -1,7 +1,6 @@
 /**
  * @author Max Tuchman (me@mbtuchman.com)
- * @description 02.08 Challenge Program
- * 
+ *
  * -=-=-=-= Begin PMR (Post Mortem Review) =-=-=-=-
  * Pluses:
  * + I found out how to make a currency conversion software. (command line based, of course)
@@ -13,9 +12,6 @@
  * <> Find a currency conversion library. 
  * <> Figure out a cleaner way to do currency conversion.
  * -=-=-=-= End PMR (Post Mortem Review) =-=-=-=-
- *
- * CURRENCY SOURCE: https://corp.google.com/finance/currency-conversion/
- * CURRENT AS OF: October 11th, 2015 (6:18 PM Eastern Standard)
  * 
  */
 

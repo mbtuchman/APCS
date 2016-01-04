@@ -1,7 +1,6 @@
 /**
  * @author Max Tuchman (me@mbtuchman.com)
- * @description 02.05 Arithmetic Expressions
- * 
+ *
  * -=-=-=-= Begin PMR (Post Mortem Review) =-=-=-=-
  * Pluses:
  * + I finally understood declared variables in Java

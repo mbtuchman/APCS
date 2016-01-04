@@ -1,31 +1,21 @@
-package Module06;
-
-import java.util.Scanner;
-
 /**
- * Project title: 06.02 Formatting Output
- * 
- * Purpose of Project: Calculate the percentage of a repeated string. (Boy, Girl, Both).
- * 
- * @version 12/15/2014
- * 
- * @author Omar Rahman
+ * @description 06.02 Formatting Output
+ * @author Max Tuchman (me@mbtuchman.com)
  * 
  * *********** PMR ***********
  * (+) Understood how arrays work.
  * 
  * (-) Need to understand for loops and printf more.
  * ***************************
- * 
- * In the future: Practice/Review
  */
 
+import java.util.Scanner;
 
 class AnnualClimate {
 
-	public static void main(String[] args) {
-        
-        //Decalre the scanner
+	public static void main(String[] args) throws IOException{		
+       
+        //Declare the scanner
         Scanner in = new Scanner(System.in);
         
         //Declare the variables
@@ -46,12 +36,12 @@ class AnnualClimate {
         //Array for temps in Miami, FL
         double[] temp = {68.1, 69.1, 72.4, 75.7, 79.6, 82.4, 83.7, 83.6, 82.4, 78.8, 74.4, 69.9};
         //Array for precip in Miami, FL
-        double[] precp = {1.9, 2.1, 2.6, 3.4, 5.5, 8.5, 5.8, 8.6, 8.4, 6.2, 3.4, 2.2};
+        double[] precip = {1.9, 2.1, 2.6, 3.4, 5.5, 8.5, 5.8, 8.6, 8.4, 6.2, 3.4, 2.2};
 
         //User input
         System.out.println("Choose the temperature scale (F = Fahrenheit, C = Celsius): ");
         choiceTemp = in.nextLine();
-        System.out.print("Choose the precipitation scale (I = Inches, CM = Centimeteres): ");
+        System.out.print("Choose the precipitation scale (I = Inches, CM = Centimeters): ");
         choiceLength = in.nextLine();
         
         //If user chose F
@@ -77,10 +67,10 @@ class AnnualClimate {
         //If user chose cm convert to cm
         else if (choiceLength.equalsIgnoreCase("cm")) {
         	for (int i=1; i<12; i++) {
-        		precp[i] = precp[i] * 2.54;
-        		precp[i] = precp[i] * 10;
-        		precp[i] = ((int)precp[i]);
-        		precp[i] = precp[i] / 10;
+        		precip[i] = precip[i] * 2.54;
+        		precip[i] = precip[i] * 10;
+        		precip[i] = ((int)precip[i]);
+        		precip[i] = precip[i] / 10;
         	}
         	precipUnit = "cm";
         }
@@ -101,10 +91,10 @@ class AnnualClimate {
         
         for(int i=0; i<12; i++) 
         {
-            sum=sum+precp[i];
+            sum=sum+precip[i];
         }
         
-        //Average Precp
+        //Average Precip
         double avgPrecip = (sum*10);
         avgPrecip = (int)avgPrecip;
         avgPrecip = avgPrecip/10;
@@ -118,7 +108,7 @@ class AnnualClimate {
         
         for(int i=0; i<12; i++) 
         {
-            System.out.printf("%8s%13s%20s\n", months[i], temp[i], precp[i]);
+            System.out.printf("%8s%13s%20s\n", months[i], temp[i], precip[i]);
         }
         
         System.out.println("*****************************************************");

@@ -1,33 +1,24 @@
-package Module06;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.Scanner;
-
 /**
- * Project title: 06.04 Challenge Program
- *
- * Purpose of Project: Challenge program for Hurricane data.
- *
- * @version 2/12/2015
- *
- * @author Omar Rahman
+ * @assignment 06.04 Challenge Program
+ * @author Max Tuchman (me@mbtuchman.com)
  *
  * *********** PMR ***********
  * (+) Understood while loops more and reading text files.
  *
  * (-) Getting the output with printf() was difficult at first.
  * ***************************
- *
- * In the future: Practice.
  */
 
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
 
 public class Hurricanes2 {
 
     public static void main(String[] args) throws IOException {
 
-        //Declare variables
+        
+//Declare variables
         int arrayLength = 59;
         int index = 0;
         int windAverage = 0;
@@ -41,25 +32,32 @@ public class Hurricanes2 {
         int category3 = 0;
         int category4 = 0;
         int category5 = 0;
-        //Year Array
+        
+//Year Array
         int[] year;
         year = new int[arrayLength];
-        //Month Array
+        
+//Month Array
         String[] month;
         month = new String[arrayLength];
-        //Pressure Array
+        
+//Pressure Array
         int[] pressure;
         pressure = new int[arrayLength];
-        //Wind Knots Array
+        
+//Wind Knots Array
         int[] wind;
         wind = new int[arrayLength];
-        //Name Array
+        
+//Name Array
         String[] name;
         name = new String[arrayLength];
-        //Wind MPH Array
+        
+//Wind MPH Array
         double[] windMPH;
         windMPH = new double[arrayLength];
-        //Category Array
+        
+//Category Array
         int[] category;
         category = new int[arrayLength];
 

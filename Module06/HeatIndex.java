@@ -1,26 +1,18 @@
-package Module06;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.Scanner;
 
 /**
- * Project title: 06.03 The for-each Loop
- *
- * Purpose of Project: Calculates the temp and humidity for Key West Florida.
- *
- * @version 1/18/2015
- *
- * @author Omar Rahman
+ * @author Max Tuchman (me@mbtuchman.com)
+ * @description 06.03 The for-each Loop
  *
  * *********** PMR ***********
  * (+) Understood how arrays work better with for-each loops.
  *
- * (-) Printf is still kind of confusing and need a good amount of practice with it and arrays.
+ * (-) Printf is still sort of befuddling and need a decent measure of practice with it and arrays.
  * ***************************
- *
- * In the future: Practice/Review
  */
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
 
 class HeatIndex {
 
