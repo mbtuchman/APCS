@@ -68,7 +68,7 @@ public class CarV3 {
         gals = 12.2;
         sMiles = 110000;
         eMiles = 110100;
-        price =  1.89; //As of Tuesday, Feb 10th, 2015
+        price =  1.99;
 
         car = "2000 BMW 328i";
         
