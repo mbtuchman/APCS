@@ -1,21 +1,13 @@
-package Module08;
-
 /**
- * Project title: 08.07 Constructing Multiple Objects
- *
- * Purpose of Project: Calculates the gas mileage on an example car.
- *
- * @version 2/11/2015
- *
- * @author Omar Rahman
+ * @assignment 08.07 Constructing Multiple Objects
+ * @description Calculates the gas mileage on an example car.
+ * @author Max Tuchman (me@mbtuchman.com)
  *
  * *********** PMR ***********
  * (+) Understood OOP more.
  *
  * (-) Need more practice with OOP.
  * ***************************
- *
- * In the future: Practice.
  */
 
 public class CarV7 {
